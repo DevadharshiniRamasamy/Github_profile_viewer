@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    text-align: center;
+  }
+  
+  .wrapper {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  /* Search Section */
+  .search-container {
+    margin-bottom: 30px;
+  }
+  
+  input {
+    padding: 12px;
+    font-size: 16px;
+    width: 70%;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-card {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .profile-stats {
+    margin-bottom: 30px;
+  }
+  
+  .repo-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .repo-list li {
+    background-color: #f1f3f5;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .repo-list li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .repo-list li a:hover {
+    text-decoration: underline;
+  }
+  
+  .load-more-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .load-more-btn:hover {
+    background-color: #218838;
+  }
+  
+  .theme-toggle-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .theme-toggle-btn:hover {
+    background-color: #495057;
+  }
+  
+  body.dark-mode {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  body.dark-mode .profile-card {
+    background-color: #495057;
+  }
+  
+  body.dark-mode .repo-list li {
+    background-color: #6c757d;
+  }
+  
+  body.dark-mode button {
+    background-color: #495057;
+    color: white;
+  }
+  
+  body.dark-mode button:hover {
+    background-color: #212529;
+  }
+  
+  body.dark-mode .theme-toggle-btn {
+    background-color: #f8f9fa;
+    color: black;
+  }
+  
+  body.dark-mode .theme-toggle-btn:hover {
+    background-color: #e9ecef;
+  }

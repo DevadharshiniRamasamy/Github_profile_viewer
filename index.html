@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>GitHub Profile Viewer</h1>
+    <div class="search-container">
+      <input type="text" id="username" placeholder="Enter GitHub Username">
+      <button id="search-btn" onclick="getGitHubProfile()">Search</button>
+    </div>
+
+    <div class="profile-card" id="profile">
+      <div class="profile-header">
+        <img id="avatar" src="" alt="Profile Picture" class="avatar">
+        <h2 id="name"></h2>
+        <p id="bio"></p>
+      </div>
+      <div class="profile-stats">
+        <p><strong>Followers:</strong> <span id="followers"></span> | <strong>Following:</strong> <span id="following"></span></p>
+      </div>
+      <h3>Repositories:</h3>
+      <ul class="repo-list" id="repo-list"></ul>
+      <button id="load-more" class="load-more-btn" onclick="loadMoreRepos()">Load More</button>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()">Switch to Dark Mode</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
